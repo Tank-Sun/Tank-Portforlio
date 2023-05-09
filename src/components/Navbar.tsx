@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className={showMenu ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
-        <div className={showMenu ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-900 p-10 ease-in duration-500' : 'hidden'}>
+        <div className={showMenu ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-900 p-10 ease-in duration-300' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
           <div>
             <div className='flex w-full items-center justify-between' >
               <div>

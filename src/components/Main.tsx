@@ -13,7 +13,7 @@ const Main = () => {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['<i>Full Stack Developer</i>', '<i>Lifelong Learner</i>', '<i>Problem Solver</i>', '<i>Caregiver</i>'],
+      strings: ['<i>Full Stack Developer</i>', '<i>Lifelong Learner</i>', '<i>Problem Solver</i>', '<i>Team Player</i>'],
       typeSpeed: 50,
       loop: true,
     });

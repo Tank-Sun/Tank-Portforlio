@@ -11,7 +11,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-gray-950 opacity-[0.99] text-white tracking-wide overflow-hidden
+    @apply bg-gray-950 opacity-[0.99] text-white tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {

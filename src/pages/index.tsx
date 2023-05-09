@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import { Inter } from 'next/font/google'
 import Main from '@/components/Main';
 import About from '@/components/About';
+import Projects from '@/components/Projects';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,6 +13,7 @@ export default function Home() {
     <main className='mx-auto px-4'>
       <Main />
       <About />
+      <Projects />
     </main>
   )
 }
