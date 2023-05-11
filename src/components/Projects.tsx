@@ -1,26 +1,48 @@
 import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+import ProjectItem from './ProjectItem'
 import sharedDocumentEditor from '../../public/assets/projects/SharedDocumentEditor/dashboard.png'
+import InterviewScheduler from '../../public/assets/projects/InterviewScheduler/addAppointment.png'
+import FoodPickUpOrder from '../../public/assets/projects/FoodPickUpOrder/cart.png'
+import Jungle from '../../public/assets/projects/Jungle/homePage.png'
 
 const Projects = () => {
+
+  const projects = [
+    {
+      projectName: 'Shared Document Editor 2.0',
+      mainTech: 'TypeScript, Node.js, MongoDB, React',
+      coverImage: sharedDocumentEditor
+    },
+    {
+      projectName: 'Jungle',
+      mainTech: 'Ruby, Ruby on Rails, PostgreSQL, Stripe',
+      coverImage: Jungle
+    },
+    {
+      projectName: 'Interview Scheduler',
+      mainTech: 'JavaScirpt, React, Cypress',
+      coverImage: InterviewScheduler
+    },
+    {
+      projectName: 'Food Pick-up Ordering',
+      mainTech: 'JavaScirpt, Node.js, PostgreSQL, jQuery, Ajax, Sass',
+      coverImage: FoodPickUpOrder
+    }
+  ];
+
+  const projectsList = projects.map((project, index) => {
+    return (
+      <ProjectItem key={index} projectName={project.projectName} mainTech={project.mainTech} coverImage={project.coverImage}/>
+    );
+  });
+
   return (
-    <div className='flex flex-col w-full h-screen py-16 justify-start'>
+    <div className='flex flex-col w-[85%] 2xl:w-[75%] m-auto py-16 justify-start'>
       <div className='mt-4 mb-3 underline underline-offset-[12px]'>
         <h1>My Projects</h1>
       </div>
-      <div className='grid md:grid-cols-2 gap-8 p-8'>
-        <div className='relative flex items-center justify-center h-auto w-full shadow-[0px_7px_10px] shadow-white/50 rounded-xl group'>
-          <Image className='rounded-xl group-hover:opacity-10' src={sharedDocumentEditor} alt='Shared Document Editor 2.0'/>
-          <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-            <h3 className='text-2xl text-white tracking-wider text-center'>Shared Document Editor 2.0</h3>
-            <p className='pb-4 pt-2 text-white text-center'>TypeScript, React</p>
-            <Link href='/'>
-              <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>More Info</p>
-            </Link>
-          </div>
-        </div>
-
+      <div className='grid lg:grid-cols-2 gap-12 py-8'>
+        {projectsList}
       </div>
     </div>
   )

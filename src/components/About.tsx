@@ -1,15 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { GoLinkExternal } from 'react-icons/go'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   return (
-    <div className='flex flex-col w-full h-screen py-16 justify-start items-center'>
-      <div className='flex flex-col p-4 space-y-6 items-stretch md:flex-row md:justify-around md:p-4 md:space-y-0'>
-        <div className='md:w-[35%]'>
+    <div className='flex flex-col w-full 2xl:w-[90%] 2xl:h-screen py-16 m-auto justify-start items-center'>
+      <div className='flex flex-col p-4 space-y-6 items-stretch lg:flex-row lg:justify-around lg:p-4 lg:space-y-0'>
+        <div className='lg:w-[35%]'>
           <div className='mt-4 mb-3 underline underline-offset-4'>
             <h1>About Me</h1>
           </div>
@@ -27,7 +26,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className='md:w-[35%]'>
+        <div className='lg:w-[35%]'>
           <div className='mt-4 mb-3 underline underline-offset-[12px]'>
             <h1>My Skills</h1>
           </div>

@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleShowMenu = () => {setShowMenu(!showMenu)};
 
   return (
-    <div className='fixed w-full h-20 z-[100]'>
+    <div className='fixed w-full h-20 z-[100] bg-gray-950'>
       <div className='flex justify-between items-center w-full h-full px-4 md:px-8 2xl:px-16'>
         <div>
           <h1 className='text-2xl font-bold'>Tank Sun</h1>
