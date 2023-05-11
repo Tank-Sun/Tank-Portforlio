@@ -6,7 +6,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   return (
-    <div className='flex flex-col w-full 2xl:w-[90%] 2xl:h-screen py-16 m-auto justify-start items-center'>
+    <div id='about' className='flex flex-col w-full 2xl:w-[90%] 2xl:h-screen py-16 m-auto justify-start items-center'>
       <div className='flex flex-col p-4 space-y-6 items-stretch lg:flex-row lg:justify-around lg:p-4 lg:space-y-0'>
         <div className='lg:w-[35%]'>
           <div className='mt-4 mb-3 underline underline-offset-4'>
@@ -139,7 +139,7 @@ const About = () => {
         </div>
       </div>
       <div className='md:mt-10 px-4 md:w-[80%]'>
-        <p className='indent-6 text-lg md:indent-8 md:text-2xl md:leading-loose'>If you share the same values with me or find my background intriguing, please feel free to <Link href='/' className='underline underline-offset-4'>reach out</Link>! For more information about my work and experience, take a look at my <Link href='/' className='underline underline-offset-4'>projects</Link> and <Link href='/' className='underline underline-offset-4'>resume <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='xs'/></Link>. &#128516;</p>
+        <p className='indent-6 text-lg md:indent-8 md:text-2xl md:leading-loose'>If you share the same values with me or find my background intriguing, please feel free to <Link href='/#contact' className='underline underline-offset-4'>reach out</Link>! For more information about my work and experience, take a look at my <Link href='/#projects' className='underline underline-offset-4'>projects</Link> and <Link href='https://resume.creddle.io/resume/2461c883ivt' target="_blank" rel="noopener noreferrer" className='underline underline-offset-4'>resume <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='xs'/></Link>. &#128516;</p>
       </div>
     </div>
   )

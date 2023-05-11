@@ -10,19 +10,19 @@ const ProjectItem = (props) => {
       <Image className='h-full w-full rounded-xl group-hover:opacity-10' src={props.coverImage} alt={props.projectName}/>
       <div className='hidden flex-col items-center group-hover:flex absolute'>
         <div>
-          <h3 className='text-2xl text-white tracking-wider text-center'>{props.projectName}</h3>
+          <h3 className='md:text-2xl text-white tracking-wider text-center'>{props.projectName}</h3>
         </div>
         <div>
-          <p className='pb-4 pt-2 text-white text-center'>{props.mainTech}</p>
+          <p className='text-xs md:text-lg pb-4 pt-2 text-white text-center'>{props.mainTech}</p>
         </div>
         <div>
           <Link href='/'>
-            <p className='text-center my-2 py-1 px-4 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:bg-blue-500 hover:text-white'>Code on GitHub <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm'/></p>
+            <p className='text-center my-1 md:my-2 py-1 px-4 rounded-lg bg-white text-gray-700 font-bold text-xs md:text-lg cursor-pointer hover:bg-blue-500 hover:text-white'>Code on GitHub <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm'/></p>
           </Link>
         </div>
         <div>
           <Link href='/'>
-            <p className='text-center my-2 py-1 px-4 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:bg-blue-500 hover:text-white'>More Info <FontAwesomeIcon icon={faArrowRight} size='sm'/></p>
+            <p className='text-center my-1 md:my-2 py-1 px-4 rounded-lg bg-white text-gray-700 font-bold text-xs md:text-lg cursor-pointer hover:bg-blue-500 hover:text-white'>More Info <FontAwesomeIcon icon={faArrowRight} size='sm'/></p>
           </Link>
         </div>
       </div>

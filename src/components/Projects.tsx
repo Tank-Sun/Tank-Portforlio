@@ -37,7 +37,7 @@ const Projects = () => {
   });
 
   return (
-    <div className='flex flex-col w-[85%] 2xl:w-[75%] m-auto py-16 justify-start'>
+    <div id='projects' className='flex flex-col w-[85%] 2xl:w-[75%] m-auto py-16 justify-start'>
       <div className='mt-4 mb-3 underline underline-offset-[12px]'>
         <h1>My Projects</h1>
       </div>

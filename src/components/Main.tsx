@@ -25,7 +25,7 @@ const Main = () => {
   }, []);
 
   return (
-    <section className='flex flex-col items-center justify-around h-screen'>
+    <section id='main' className='flex flex-col items-center justify-around h-screen'>
       <div className='flex flex-col text-center items-center justify-center my-10 py-16 w-full md:flex-row md:justify-around'>
         <div className='text-left w-[95%] sm:w-[60%] lg:w-[40%]'>
           <h1>Hi, I am Tank Sun,</h1>
@@ -37,7 +37,7 @@ const Main = () => {
           
       </div>
       <div>
-        <Link href='/'>
+        <Link href='/#about'>
           <FiChevronsDown size={50} className="animate-bounce"/>
         </Link>
       </div>
