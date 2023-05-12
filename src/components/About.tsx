@@ -1,10 +1,85 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import SkillItem from './SkillItem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
+
+  const skills = [
+    {
+      skillName: 'JavaScript',
+      skillImage: '/assets/skills/javascript.png',
+      width: 40
+    },
+    {
+      skillName: 'TypeScript',
+      skillImage: '/assets/skills/typescript.png',
+      width: 40
+    },
+    {
+      skillName: 'HTML',
+      skillImage: '/assets/skills/html.png',
+      width: 40
+    },
+    {
+      skillName: 'CSS',
+      skillImage: '/assets/skills/css.png',
+      width: 40
+    },
+    {
+      skillName: 'Node.js',
+      skillImage: '/assets/skills/node.png',
+      width: 40
+    },
+    {
+      skillName: 'React',
+      skillImage: '/assets/skills/react.png',
+      width: 40
+    },
+    {
+      skillName: 'Next.js',
+      skillImage: '/assets/skills/nextjs.png',
+      width: 40
+    },
+    {
+      skillName: 'PostgreSQL',
+      skillImage: '/assets/skills/postgresql.png',
+      width: 60
+    },
+    {
+      skillName: 'MongoDB',
+      skillImage: '/assets/skills/mongo.png',
+      width: 40
+    },
+    {
+      skillName: 'Tailwind CSS',
+      skillImage: '/assets/skills/tailwind.png',
+      width: 40
+    },
+    {
+      skillName: 'Socket.IO',
+      skillImage: '/assets/skills/socketio.png',
+      width: 40
+    },
+    {
+      skillName: 'Ruby',
+      skillImage: '/assets/skills/ruby.png',
+      width: 40
+    },
+    {
+      skillName: 'Ruby on Rails',
+      skillImage: '/assets/skills/rubyonrails.png',
+      width: 60
+    }
+  ];
+
+  const skillList = skills.map((skill, index) => {
+    return (
+      <SkillItem key={index} skillName={skill.skillName} skillImage={skill.skillImage} width={skill.width} />
+    );
+  });
+
   return (
     <div id='about' className='flex flex-col w-full 2xl:w-[90%] 2xl:h-screen py-16 m-auto justify-start items-center'>
       <div className='flex flex-col p-4 space-y-6 items-stretch lg:flex-row lg:justify-around lg:p-4 lg:space-y-0'>
@@ -31,110 +106,7 @@ const About = () => {
             <h1>My Skills</h1>
           </div>
           <div className='flex flex-wrap py-5'>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/javascript.png' width={40} height={40} alt='JavaScript' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>JavaScript</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/TypeScript.png' width={60} height={40} alt='TypeScript' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>TypeScript</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/html.png' width={40} height={40} alt='HTML' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>HTML</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/css.png' width={40} height={40} alt='CSS' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>CSS</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/node.png' width={40} height={40} alt='Node' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>Node.js</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/react.png' width={40} height={40} alt='React' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>React</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/nextjs.png' width={40} height={40} alt='Next.js' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>Next.js</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/PostgreSQL.png' width={40} height={40} alt='PostgreSQL' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>PostgreSQL</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/mongo.png' width={40} height={40} alt='MongoDB' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>MongoDB</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/tailwind.png' width={40} height={40} alt='Tailwind CSS' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>Tailwind CSS</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/SocketIO.png' width={40} height={40} alt='Socket.IO' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>Socket.IO</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/ruby.png' width={40} height={40} alt='Ruby' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>Ruby</p>
-              </div>
-            </div>
-            <div className='flex items-center justify-around px-4 py-2 mr-2 mb-4 rounded-md bg-slate-50 shadow-xl shadow-gray-400/50'>
-              <div className='pr-3'>
-                <Image src='/assets/skills/RubyonRails.png' width={60} height={40} alt='Ruby on Rails' />
-              </div>
-              <div>
-                <p className='text-black md:text-lg font-semibold'>Ruby on Rails</p>
-              </div>
-            </div>
+            {skillList}
           </div>
         </div>
       </div>

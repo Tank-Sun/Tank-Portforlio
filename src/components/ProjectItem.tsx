@@ -1,10 +1,16 @@
 import React from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-const ProjectItem = (props) => {
+type ProjectItemProps = {
+  projectName: string,
+  mainTech: string,
+  coverImage: StaticImageData,
+};
+
+const ProjectItem = (props: ProjectItemProps) => {
   return (
     <div className='relative flex items-center justify-center h-auto w-full shadow-[5px_7px_10px] shadow-gray-500 rounded-xl group hover:scale-[1.02] ease-in duration-100'>
       <Image className='h-full w-full rounded-xl group-hover:opacity-10' src={props.coverImage} alt={props.projectName}/>
