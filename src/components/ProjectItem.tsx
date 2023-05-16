@@ -8,6 +8,8 @@ type ProjectItemProps = {
   projectName: string,
   mainTech: string,
   coverImage: StaticImageData,
+  githubUrl: string,
+  url: string
 };
 
 const ProjectItem = (props: ProjectItemProps) => {
@@ -22,12 +24,12 @@ const ProjectItem = (props: ProjectItemProps) => {
           <p className='text-xs md:text-lg pb-4 pt-2 text-white text-center'>{props.mainTech}</p>
         </div>
         <div>
-          <Link href='/'>
+          <Link href={props.githubUrl} target="_blank" rel="noopener noreferrer">
             <p className='text-center my-1 md:my-2 py-1 px-4 rounded-lg bg-white text-gray-700 font-bold text-xs md:text-lg cursor-pointer hover:bg-blue-500 hover:text-white'>Code on GitHub <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm'/></p>
           </Link>
         </div>
         <div>
-          <Link href='/'>
+          <Link href={props.url}>
             <p className='text-center my-1 md:my-2 py-1 px-4 rounded-lg bg-white text-gray-700 font-bold text-xs md:text-lg cursor-pointer hover:bg-blue-500 hover:text-white'>More Info <FontAwesomeIcon icon={faArrowRight} size='sm'/></p>
           </Link>
         </div>

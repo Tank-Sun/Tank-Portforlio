@@ -11,28 +11,43 @@ const Projects = () => {
     {
       projectName: 'Shared Document Editor 2.0',
       mainTech: 'TypeScript, Node.js, MongoDB, React',
-      coverImage: sharedDocumentEditor
+      coverImage: sharedDocumentEditor,
+      githubUrl: 'https://github.com/Tank-Sun/Shared_document_editor_2.0',
+      url: '/shared_document_editor'
     },
     {
       projectName: 'Jungle',
       mainTech: 'Ruby, Ruby on Rails, PostgreSQL, Stripe',
-      coverImage: Jungle
+      coverImage: Jungle,
+      githubUrl: 'https://github.com/Tank-Sun/jungle',
+      url: '/jungle'
     },
     {
       projectName: 'Interview Scheduler',
       mainTech: 'JavaScirpt, React, Cypress',
-      coverImage: InterviewScheduler
+      coverImage: InterviewScheduler,
+      githubUrl: 'https://github.com/Tank-Sun/scheduler',
+      url: '/interview_scheduler'   
     },
     {
       projectName: 'Food Pick-up Ordering',
       mainTech: 'JavaScirpt, Node.js, PostgreSQL, jQuery, Ajax, Sass',
-      coverImage: FoodPickUpOrder
+      coverImage: FoodPickUpOrder,
+      githubUrl: 'https://github.com/Tank-Sun/midterm-1-Food-Pick-up-Ordering',
+      url: '/food_pickup_ordering'
     }
   ];
 
   const projectsList = projects.map((project, index) => {
     return (
-      <ProjectItem key={index} projectName={project.projectName} mainTech={project.mainTech} coverImage={project.coverImage}/>
+      <ProjectItem 
+        key={index}
+        projectName={project.projectName}
+        mainTech={project.mainTech}
+        coverImage={project.coverImage}
+        githubUrl={project.githubUrl}
+        url={project.url}
+      />
     );
   });
 

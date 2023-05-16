@@ -12,6 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main className='mx-auto px-4'>
+      <Navbar />
       <Main />
       <About />
       <Projects />
