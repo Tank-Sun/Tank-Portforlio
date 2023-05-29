@@ -25,6 +25,14 @@ html {
   h2 {
     @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl
   }
+
+  h3 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl pt-8 pb-4 underline underline-offset-4
+  }
+
+  h4 {
+    @apply sm:text-xl md:text-2xl lg:text-2xl pt-4 pb-1
+  }
   
   li {
     @apply cursor-pointer
