@@ -17,21 +17,21 @@ const Navbar = () => {
           <h1 className='text-2xl font-bold'>Tank Sun</h1>
         </div>
         <div>
-          <ul className='hidden md:flex'>
-            <Link href='/'>
+          <ul className='hidden md:flex md:pr-8'>
+            <Link href='/#main' scroll={false}>
               <li className='px-1 ml-10 text-sm uppercase hover:border-b'>Home</li>
             </Link>
-            <Link href='/#about'>
+            <Link href='/#about' scroll={false}>
               <li className='px-1 ml-10 text-sm uppercase hover:border-b'>About</li>
             </Link>
-            <Link href='/#projects'>
+            <Link href='/#projects' scroll={false}>
               <li className='px-1 ml-10 text-sm uppercase hover:border-b'>Projects</li>
             </Link>
-            <Link href='/#contact'>
+            <Link href='/#contact' scroll={false}>
               <li className='px-1 border-b-2 border-green-500 ml-10 text-sm uppercase hover:bg-green-500'>Contact</li>
             </Link>
           </ul>
-          <div onClick={handleShowMenu} className='md:hidden'>
+          <div onClick={handleShowMenu} className='md:hidden pr-8'>
             <HiOutlineMenu size={25}/>
           </div>
         </div>
@@ -49,16 +49,16 @@ const Navbar = () => {
             </div>
             <div className='pt-10 pb-4 flex flex-col'>
               <ul className='uppercase'>
-                <Link href='/' onClick={handleShowMenu}>
+                <Link href='/#main' onClick={handleShowMenu} scroll={false}>
                   <li className='py-4 text-sm'>Home</li>
                 </Link>
-                <Link href='/#about' onClick={handleShowMenu}>
+                <Link href='/#about' onClick={handleShowMenu} scroll={false}>
                   <li className='py-4 text-sm'>About</li>
                 </Link>
-                <Link href='/#projects' onClick={handleShowMenu}>
+                <Link href='/#projects' onClick={handleShowMenu} scroll={false}>
                   <li className='py-4 text-sm'>Projects</li>
                 </Link>
-                <Link href='/#contact' onClick={handleShowMenu}>
+                <Link href='/#contact' onClick={handleShowMenu} scroll={false}>
                   <li className='py-4 text-sm'>Contact</li>
                 </Link>
               </ul>
@@ -75,7 +75,7 @@ const Navbar = () => {
                       <FaGithub />
                     </div>
                   </Link>
-                  <Link href='/#contact' onClick={handleShowMenu}>
+                  <Link href='/#contact' onClick={handleShowMenu} scroll={false}>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-200'>
                       <AiOutlineMail />
                     </div>

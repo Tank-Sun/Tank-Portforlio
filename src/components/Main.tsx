@@ -37,7 +37,7 @@ const Main = () => {
           
       </div>
       <div>
-        <Link href='/#about'>
+        <Link href='/#about' scroll={false}>
           <FiChevronsDown size={50} className="animate-bounce"/>
         </Link>
       </div>

@@ -18,7 +18,7 @@ const ProjectItem = (props: ProjectItemProps) => {
       <Image className='h-full w-full rounded-xl group-hover:opacity-10' src={props.coverImage} alt={props.projectName}/>
       <div className='hidden flex-col items-center group-hover:flex absolute'>
         <div>
-          <h3 className='md:text-2xl text-white tracking-wider text-center'>{props.projectName}</h3>
+          <h5 className='md:text-2xl text-white tracking-wider text-center'>{props.projectName}</h5>
         </div>
         <div>
           <p className='text-xs md:text-lg pb-4 pt-2 text-white text-center'>{props.mainTech}</p>
