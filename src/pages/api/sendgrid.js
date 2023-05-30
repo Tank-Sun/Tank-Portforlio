@@ -1,13 +1,15 @@
 import sendgrid from "@sendgrid/mail";
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+const sendgridApiKey = process.env.SENDGRID_API_KEY;
+
+sendgrid.setApiKey(sendgridApiKey);
 
 async function sendEmail(req, res) {
 
   try {
     await sendgrid.send({
-      to: "youremail@gmail.com", // Your email where you'll receive emails
-      from: "anotheremail@gmail.com", // your website email address here
+      to: "thomastank0926@gmail.com", // Your email where you'll receive emails
+      from: "tanksunportfolio@gmail.com", // your website email address here
       subject: `[Lead from website] : ${req.body.subject}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
@@ -21,7 +23,7 @@ async function sendEmail(req, res) {
 
         <body>
           <div class="container" style="margin-left: 20px;margin-right: 20px;">
-            <h3>You've got a new mail from ${req.body.name}, their email is: ✉️${req.body.email} </h3>
+            <h3>You've got a new mail from ${req.body.name}, their email is: ✉️${req.body.email}, their phone number is ${req.body.phoneNumber} </h3>
             <div style="font-size: 16px;">
               <p>Message:</p>
               <p>${req.body.message}</p>
@@ -31,8 +33,7 @@ async function sendEmail(req, res) {
       </html>`,
     });
   } catch (error) {
-    // console.log(error);
-    return res.status(error.statusCode || 500).json({ error: error.message });
+    return res.status(error.statusCode || 500).json({ error: error.message }); 
   }
 
   return res.status(200).json({ error: "" });
