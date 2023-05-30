@@ -1,9 +1,17 @@
 import React from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 
 const Contact = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phoneNumber, setPhoneNumber] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+
+
   return (
     <div id='contact' className='w-full lg:h-screen'>
       <div className='flex flex-col w-[85%] 2xl:w-[75%] m-auto py-16 justify-start items-center'>
@@ -15,23 +23,59 @@ const Contact = () => {
             <h2>Let's Get In Touch</h2>
           </div>
           <div className='p-4'>
-            <form className='text-black'>
+            <form
+              onSubmit={handleSubmit}
+              className='text-black'
+            >
               <div>
-                <input type='text' placeholder='Name' className='w-full border-2 border-gray-300 rounded-lg p-3 my-1 md:my-4 focus:outline-none focus:border-blue-500'/>
+                <input
+                  type='text'
+                  placeholder='Name' 
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className='w-full border-2 border-gray-300 rounded-lg p-3 my-1 md:my-4 focus:outline-none focus:border-blue-500'
+                />
               </div>
               <div>
-                <input type='email' placeholder='Email' className='w-full border-2 border-gray-300 rounded-lg p-3 my-1 md:my-4 focus:outline-none focus:border-blue-500'/>
+                <input
+                  type='email'
+                  placeholder='Email'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className='w-full border-2 border-gray-300 rounded-lg p-3 my-1 md:my-4 focus:outline-none focus:border-blue-500'
+                />
               </div>
               <div>
-                <input type='text' placeholder='Phone Number' className='w-full border-2 border-gray-300 rounded-lg p-3 my-1 md:my-4 focus:outline-none focus:border-blue-500'/>
+                <input
+                  type='text'
+                  placeholder='Phone Number (optional)'
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  className='w-full border-2 border-gray-300 rounded-lg p-3 my-1 md:my-4 focus:outline-none focus:border-blue-500'
+                />
               </div>
               <div>
-                <input type='text' placeholder='Subject' className='w-full border-2 border-gray-300 rounded-lg p-3 my-1 md:my-4 focus:outline-none focus:border-blue-500'/>
+                <input
+                  type='text'
+                  placeholder='Subject'
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                  className='w-full border-2 border-gray-300 rounded-lg p-3 my-1 md:my-4 focus:outline-none focus:border-blue-500'
+                />
               </div>
               <div>
-                <textarea placeholder='Message' rows={6} className='w-full border-2 border-gray-300 rounded-lg p-3 my-1 md:my-4 focus:outline-none focus:border-blue-500'/>
+                <textarea
+                placeholder='Message'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                rows={6}
+                className='w-full border-2 border-gray-300 rounded-lg p-3 my-1 md:my-4 focus:outline-none focus:border-blue-500'
+              />
               </div>
-              <button className='w-full p-3 rounded-xl uppercase bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 text-gray-950 font-semibold text-lg mt-2 md:mt-4'>
+              <button
+                type='submit'
+                className='w-full p-3 rounded-xl uppercase bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 text-gray-950 font-semibold text-lg mt-2 md:mt-4'
+              >
                 Send Message
               </button>
             </form>
