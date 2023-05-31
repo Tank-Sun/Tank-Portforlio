@@ -1,4 +1,4 @@
-import React, { FormEventHandler } from 'react'
+import React from 'react'
 import { useState } from 'react'
 import Link from 'next/link'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
