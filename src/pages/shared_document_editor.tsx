@@ -9,6 +9,7 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare, faAnglesLeft } from '@fortawesome/free-solid-svg-icons'
 
+
 const shared_document_editor = () => {
   return (
     <div className='w-full'>
