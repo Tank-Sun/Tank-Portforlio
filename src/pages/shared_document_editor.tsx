@@ -1,22 +1,51 @@
 import React from 'react'
 import Image from 'next/image'
-import mainPic from '../../public/assets/projects/SharedDocumentEditor/dashboard.png'
-import simulEdit from '../../public/assets/projects/SharedDocumentEditor/multipleUserEdit.gif'
-import login from '../../public/assets/projects/SharedDocumentEditor/loginPage.png'
-import search from '../../public/assets/projects/SharedDocumentEditor/titleSearch.png'
-import shareLink from '../../public/assets/projects/SharedDocumentEditor/shareLink.gif'
 import Link from 'next/link'
+import Carousel from '@/components/Carousel'
+import dashboardImage from '../../public/assets/projects/SharedDocumentEditor/dashboard.png'
+import loginImage from '../../public/assets/projects/SharedDocumentEditor/login.png'
+import editorImage from '../../public/assets/projects/SharedDocumentEditor/editor.png'
+import titleSearchImage from '../../public/assets/projects/SharedDocumentEditor/titleSearch.png'
+import contentSearchImage from '../../public/assets/projects/SharedDocumentEditor/contentSearch.png'
+import simulEdit from '../../public/assets/projects/SharedDocumentEditor/realtimeEdit.gif'
+import login from '../../public/assets/projects/SharedDocumentEditor/multipleLogin.gif'
+import search from '../../public/assets/projects/SharedDocumentEditor/search.gif'
+import shareLink from '../../public/assets/projects/SharedDocumentEditor/shareLink.gif'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare, faAnglesLeft } from '@fortawesome/free-solid-svg-icons'
 
 
 const shared_document_editor = () => {
+
+
+  const images = [
+    {
+      url: loginImage,
+      alt: 'login',
+    },
+    {
+      url: dashboardImage,
+      alt: 'dashboard',
+    },
+    {
+      url: editorImage,
+      alt: 'editor',
+    },
+    {
+      url: titleSearchImage,
+      alt: 'titleSearch',
+    },
+    {
+      url: contentSearchImage,
+      alt: 'contentSearch',
+    },
+  ];
+
+
   return (
     <div className='w-full'>
-      <div className='w-screen h-[20vh] sm:h-[25vh] md:h-[30vh] lg:h-[40vh]'>
-        <Image className='w-full h-full object-cover' src={mainPic} alt='mainPic' />
-      </div>
-      <div className='p-4 w-32'>
+      <Carousel images={images} />
+      <div className='py-4 pl-2 lg:pl-4 2xl:pl-8 md:w-[90%] 2xl:w-[80%] m-auto'>
         <Link href='/#projects'>
           <p className='md:text-xl lg:text-2xl underline cursor-pointer'><FontAwesomeIcon icon={faAnglesLeft} />Back</p>
         </Link>
@@ -25,7 +54,7 @@ const shared_document_editor = () => {
         <div className='py-4'>
           <h1 className='lg:text-6xl'>Shared Document Editor</h1>
         </div>
-        <div className='pb-4 pt-2'>
+        <div className='lg:pb-4 pt-2'>
           <Link href='https://github.com/Tank-Sun/Shared_document_editor_2.0' target="_blank" rel="noopener noreferrer">
             <button className='text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm lg:text-lg px-4 py-1.5 text-center mr-2 mb-2'>Github <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm'/></button>
           </Link>
