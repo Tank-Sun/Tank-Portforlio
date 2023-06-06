@@ -2,7 +2,13 @@ import React from 'react'
 import { useState } from 'react'
 import Link from 'next/link'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import {Caveat_Brush} from 'next/font/google'
 
+const caveatBrush = Caveat_Brush({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-caveat-brush',
+});
 
 const Contact = () => {
   const [name, setName] = useState('')
@@ -105,7 +111,7 @@ const Contact = () => {
         </div>
         <div className='mt-10 md:mt-20'>
           <div className='text-center'>
-            <h2>Let's Get In Touch</h2>
+            <h2 className={`${caveatBrush.variable} font-touch text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500`}>Let's Get In Touch !</h2>
           </div>
           <div className='p-4'>
             <form

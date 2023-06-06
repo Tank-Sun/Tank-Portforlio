@@ -28,7 +28,7 @@ const Carousel = (props: CarouselProps) => {
     setCurrentIndex(slideIndex);
   };
 
-  const autoSlideInterval = 2000;
+  const autoSlideInterval = 3000;
   useEffect(() => {
     const slideInterval = setInterval(nextSlide, autoSlideInterval)
     return () => clearInterval(slideInterval)

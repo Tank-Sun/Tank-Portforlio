@@ -1,10 +1,18 @@
 import React, {useState} from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import {Dancing_Script} from 'next/font/google'
+import logo from '../../public/assets/profile/logo.png'
 import { HiOutlineMenu } from 'react-icons/hi'
 import { MdOutlineClose } from 'react-icons/md'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
+
+const dancingScript = Dancing_Script({
+  subsets: ['latin'],
+  variable: '--font-dancing-script',
+});
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -13,8 +21,15 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-20 z-[100] bg-gray-950'>
       <div className='flex justify-between items-center w-full h-full px-4 md:px-8 2xl:px-16'>
-        <div>
-          <h1 className='text-2xl font-bold'>Tank Sun</h1>
+        <div className='flex items-center'>
+          <div>
+            <Link href='/'>
+              <Image src={logo} alt='logo' className='w-12 lg:w-16 cursor-pointer' />
+            </Link>
+          </div>
+          <div className='ml-4 md:ml-5 lg:ml-8'>
+            <p className={`${dancingScript.variable} font-name text-xl md:text-2xl lg:text-4xl font-bold`}>Tank Sun</p>
+          </div>
         </div>
         <div>
           <ul className='hidden md:flex md:pr-8'>

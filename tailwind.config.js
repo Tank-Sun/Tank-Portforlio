@@ -21,6 +21,10 @@ module.exports = {
           to: { transform: "translateY(0)" },
         },
       },
+      fontFamily: {
+        name: ['var(--font-dancing-script)'],
+        touch: ['var(--font-caveat-brush)'],
+      },
     },
   },
   plugins: [],

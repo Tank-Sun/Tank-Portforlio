@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Tank Sun | Full Stack Developer</title>
         <meta name="description" content="I am a full-stack web developer specializing in building reliable and enjoyable products." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <Component {...pageProps} />
       <BackToTop />

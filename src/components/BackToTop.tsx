@@ -36,8 +36,9 @@ const BackToTop = () => {
           <button
             type="button"
             onClick={scrollToTop}
+            className='text-pink-400 focus:text-yellow-300'
           >
-            <FontAwesomeIcon icon={faShuttleSpace} className='text-pink-400 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl' rotation={270}/>
+            <FontAwesomeIcon icon={faShuttleSpace} className='text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl' rotation={270}/>
           </button>
         </div>
       )}
