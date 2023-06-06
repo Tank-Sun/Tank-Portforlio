@@ -52,7 +52,7 @@ const Projects = () => {
   });
 
   return (
-    <div id='projects' className='flex flex-col w-[85%] 2xl:w-[75%] m-auto py-16 justify-start'>
+    <div id='projects' className='flex flex-col w-[85%] 2xl:w-[75%] m-auto pt-16 pb-6 md:pt-20 md:pb-16 lg:py-20 justify-start'>
       <div className='mt-4 mb-3 underline underline-offset-[12px]'>
         <h1>My Projects</h1>
       </div>

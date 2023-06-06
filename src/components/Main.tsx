@@ -26,7 +26,7 @@ const Main = () => {
 
   return (
     <section id='main' className='flex flex-col items-center justify-around h-screen'>
-      <div className='flex flex-col text-center items-center justify-center my-10 py-16 w-full md:flex-row md:justify-around'>
+      <div className='flex flex-col text-center items-center justify-center my-10 pt-16 w-full md:flex-row md:justify-around'>
         <div className='text-left w-[95%] sm:w-[60%] lg:w-[40%]'>
           <h1>Hi, I am Tank Sun,</h1>
           <h2 className='pt-8'>a <span className='text-yellow-500 bg-blue-800' ref={el} />.</h2>

@@ -81,7 +81,7 @@ const About = () => {
   });
 
   return (
-    <div id='about' className='flex flex-col w-full 2xl:w-[90%] 2xl:h-screen py-16 m-auto justify-start items-center'>
+    <div id='about' className='flex flex-col w-full 2xl:w-[90%] 2xl:h-screen pt-16 md:pt-20 lg:py-20 m-auto justify-start items-center'>
       <div className='flex flex-col p-4 space-y-6 items-stretch lg:flex-row lg:justify-around lg:p-4 lg:space-y-0'>
         <div className='lg:w-[35%]'>
           <div className='mt-4 mb-3 underline underline-offset-4'>

@@ -50,7 +50,7 @@ const Carousel = (props: CarouselProps) => {
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className={`${slideIndex === currentIndex ? 'text-blue-400 scale-150' : 'text-white'} text-2xl cursor-pointer`}
+            className={`${slideIndex === currentIndex ? 'text-blue-500 scale-150' : 'text-white'} text-2xl cursor-pointer`}
           >
             <RxDotFilled />
           </div>

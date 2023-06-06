@@ -104,8 +104,8 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className='w-full lg:h-screen'>
-      <div className='flex flex-col w-[85%] 2xl:w-[75%] m-auto py-16 justify-start items-center'>
+    <div id='contact' className='w-full md:h-screen'>
+      <div className='flex flex-col w-[85%] 2xl:w-[75%] m-auto py-8 md:pt-20 md:pb-16 lg:py-20 justify-start items-center'>
         <div className='mt-4 mb-3 underline underline-offset-[12px] self-start'>
           <h1>Contact Me</h1>
         </div>
@@ -195,7 +195,7 @@ const Contact = () => {
               )}
             </div>
           </div>
-          <div className='flex items-center justify-evenly mt-4 md:mt-12 mb-4 mx-auto md:w-[60%]'>           
+          <div className='flex items-center justify-evenly my-4 lg:mt-12 mx-auto md:w-[60%]'>           
             <Link href='https://www.linkedin.com/in/tank-sun/' target="_blank" rel="noopener noreferrer">
               <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-150'>
                 <FaLinkedinIn size={25}/>

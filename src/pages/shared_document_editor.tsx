@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare, faAnglesLeft } from '@fortawesome/free-solid-svg-icons'
 
 
-const shared_document_editor = () => {
+const Shared_document_editor = () => {
 
 
   const images = [
@@ -108,4 +108,4 @@ const shared_document_editor = () => {
   )
 }
 
-export default shared_document_editor
+export default Shared_document_editor
