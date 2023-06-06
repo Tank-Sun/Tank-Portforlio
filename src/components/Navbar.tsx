@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className='flex justify-between items-center w-full h-full px-4 md:px-8 2xl:px-16'>
         <div className='flex items-center'>
           <div>
-            <Link href='/'>
+            <Link href='/#main' scroll={false}>
               <Image src={logo} alt='logo' className='w-12 lg:w-16 cursor-pointer' />
             </Link>
           </div>

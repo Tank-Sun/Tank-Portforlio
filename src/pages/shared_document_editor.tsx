@@ -62,7 +62,7 @@ const Shared_document_editor = () => {
         <div className='pb-16'>
           <h3>Tech Stack</h3>
           <p className='w-[95%] m-auto'>
-          Back-end: TypeScript, Node.js, Express, Socket.IO, Google-cloud/local-auth, Passport.js<br />
+          Back-end: TypeScript, Node.js, Express, Socket.IO, Google APIs, Google-cloud/local-auth, Passport.js<br />
           Front-end: React, React-router-dom, Quill, Axios, Tailwind CSS<br />
           Database: Mongo DB, Mongoose
           </p>
@@ -79,28 +79,28 @@ const Shared_document_editor = () => {
           &nbsp;&nbsp;&nbsp;&nbsp;Leveraging the power of WebSocket, one document can be edited by multiple users at the same time, and everyone can see the changes in real-time.
           </p>
           <br />
-          <Image className='w-[95%] m-auto' src={simulEdit} alt='Real-time simultaneous editing' />
+          <Image className='w-[80%] lg:w-[75%] m-auto' src={simulEdit} alt='Real-time simultaneous editing' />
           <br />
           <h4 className='w-[98%] m-auto'>2. Multiple strategies login</h4>
           <p className='w-[95%] m-auto'>
           &nbsp;&nbsp;&nbsp;&nbsp;With passport.js, this app can not only be logged in with local usernames and passwords, but also can get in with Google accounts.
           </p>
           <br />
-          <Image className='w-[95%] m-auto' src={login} alt='Multiple strategies login' />
+          <Image className='w-[80%] lg:w-[75%] m-auto' src={login} alt='Multiple strategies login' />
           <br />
           <h4 className='w-[98%] m-auto'>3. Different ways of searching</h4>
           <p className='w-[95%] m-auto'>
           &nbsp;&nbsp;&nbsp;&nbsp;Users can search their documents by titles. If they forget titles, documents can also be searched through the contents in them.
           </p>
           <br />
-          <Image className='w-[95%] m-auto' src={search} alt='Different ways of searching' />
+          <Image className='w-[80%] lg:w-[75%] m-auto' src={search} alt='Different ways of searching' />
           <br />
           <h4 className='w-[98%] m-auto'>4. Link sharing & permission setting</h4>
           <p className='w-[95%] m-auto'>
           &nbsp;&nbsp;&nbsp;&nbsp;The links to documents can be shared with other users by sending emails via Gmail API. When the creators share the documents, they can set different permissions such as editable or only viewable to others.
           </p>
           <br />
-          <Image className='w-[95%] m-auto' src={shareLink} alt='Link sharing & permission setting' />
+          <Image className='w-[80%] lg:w-[75%] m-auto' src={shareLink} alt='Link sharing & permission setting' />
           <br />
         </div>
       </div>

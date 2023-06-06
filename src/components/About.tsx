@@ -111,7 +111,7 @@ const About = () => {
         </div>
       </div>
       <div className='md:mt-10 px-4 md:w-[80%]'>
-        <p className='indent-6 text-lg md:indent-8 md:text-2xl md:leading-loose'>If you share the same values with me or find my background intriguing, please feel free to <Link href='/#contact' className='underline underline-offset-4'>reach out</Link>! For more information about my work and experience, take a look at my <Link href='/#projects' className='underline underline-offset-4'>projects</Link> and <Link href='https://resume.creddle.io/resume/2461c883ivt' target="_blank" rel="noopener noreferrer" className='underline underline-offset-4'>resume <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='xs'/></Link>. &#128516;</p>
+        <p className='indent-6 text-lg md:indent-8 md:text-2xl md:leading-loose'>If you share the same values with me or find my background intriguing, please feel free to <Link href='/#contact' scroll={false} className='underline underline-offset-4'>reach out</Link>! For more information about my work and experience, take a look at my <Link href='/#projects' scroll={false} className='underline underline-offset-4'>projects</Link> and <Link href='https://resume.creddle.io/resume/2461c883ivt' target="_blank" rel="noopener noreferrer" className='underline underline-offset-4'>resume <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='xs'/></Link>. &#128516;</p>
       </div>
     </div>
   )
