@@ -53,7 +53,7 @@ const Shared_document_editor = () => {
       </div>
       <div className='w-[95%] sm:w-[90%] md:w-[80%] lg:w-[60%] xl:w-[50%] m-auto'>
         <div className='py-4'>
-          <h1 className='lg:text-6xl'>Shared Document Editor</h1>
+          <h1 className="lg:text-6xl 2xl:text-7xl">Shared Document Editor</h1>
         </div>
         <div className='lg:pb-4 pt-2'>
           <Link href='https://github.com/Tank-Sun/Shared_document_editor_2.0' target="_blank" rel="noopener noreferrer">
