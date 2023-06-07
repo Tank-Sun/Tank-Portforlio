@@ -78,7 +78,7 @@ const Jungle = () => {
           <h1 className='lg:text-6xl'>Jungle</h1>
         </div>
         <div className='lg:pb-4 pt-2'>
-          <Link href='https://github.com/Tank-Sun/Shared_document_editor_2.0' target="_blank" rel="noopener noreferrer">
+          <Link href='https://github.com/Tank-Sun/jungle' target="_blank" rel="noopener noreferrer">
             <button className='text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm lg:text-lg px-4 py-1.5 text-center mr-2 mb-2'>Github <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm'/></button>
           </Link>
         </div>
