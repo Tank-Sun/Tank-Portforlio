@@ -1,8 +1,8 @@
 import React from 'react'
 import ProjectItem from './ProjectItem'
 import sharedDocumentEditor from '../../public/assets/projects/SharedDocumentEditor/wholeFlow.gif'
-import InterviewScheduler from '../../public/assets/projects/InterviewScheduler/wholeProcess.gif'
-import FoodPickUpOrder from '../../public/assets/projects/FoodPickUpOrder/cart.png'
+import InterviewScheduler from '../../public/assets/projects/InterviewScheduler/wholeFlow.gif'
+import FoodPickUpOrder from '../../public/assets/projects/FoodPickUpOrder/wholeFlow.gif'
 import Jungle from '../../public/assets/projects/Jungle/homePage.png'
 
 const Projects = () => {
