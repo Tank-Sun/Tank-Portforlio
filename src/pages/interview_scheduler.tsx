@@ -42,7 +42,7 @@ const Interview_scheduler = () => {
           <p className='md:text-xl lg:text-2xl underline cursor-pointer'><FontAwesomeIcon icon={faAnglesLeft} />Back</p>
         </Link>
       </div>
-      <div className='w-[95%] sm:w-[90%] md:w-[80%] lg:w-[60%] m-auto'>
+      <div className='w-[95%] sm:w-[90%] md:w-[80%] lg:w-[60%] xl:w-[50%] m-auto'>
         <div className='py-4'>
           <h1 className='lg:text-6xl'>Interview Scheduler</h1>
         </div>
@@ -53,36 +53,36 @@ const Interview_scheduler = () => {
         </div>
         <div className='pb-16'>
           <h3>Tech Stack</h3>
-          <p className='w-[95%] m-auto'>
+          <p>
           Back-end: Node.js, Express<br />
           Front-end: React, Sass<br />
           Database: PostgreSQL<br />
           Testing: Storybook, Jest, Cypress
           </p>
           <h3>Overview</h3>
-          <p className='w-[95%] m-auto'>
+          <p>
             &nbsp;&nbsp;&nbsp;&nbsp;Interview Scheduler is a user-friendly, client-side single-page application built with React. It enables users to effortlessly manage their interview schedules. With this app, users can conveniently check their existing schedules, create new interview appointments, modify existing appointments, and even delete appointments when necessary. The intuitive interface and functionality of the app ensure a seamless and efficient scheduling experience for users.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={overview} alt='whole flow' />
           <br />
           <h3>Main Features</h3>
-          <h4 className='w-[98%] m-auto'>1.	Add schedules</h4>
-          <p className='w-[95%] m-auto'>
+          <h4>1.	Add schedules</h4>
+          <p>
           &nbsp;&nbsp;&nbsp;&nbsp;Users can add their schedules to an empty spot by inputting their names and selecting the interviewer's avatar.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={addSchedule} alt='add schedule' />
           <br />
-          <h4 className='w-[98%] m-auto'>2.	Modify schedules</h4>
-          <p className='w-[95%] m-auto'>
+          <h4>2.	Modify schedules</h4>
+          <p>
           &nbsp;&nbsp;&nbsp;&nbsp;Users can update their names and the interviewer they have chosen.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={modifySchedule} alt='modify schedule' />
           <br />
-          <h4 className='w-[98%] m-auto'>3.	Delete schedules</h4>
-          <p className='w-[95%] m-auto'>
+          <h4>3.	Delete schedules</h4>
+          <p>
           &nbsp;&nbsp;&nbsp;&nbsp;Users can delete their appointments. As a safety measure, a confirmation dialogue is added to prevent the accidental deletion of their schedules.
           </p>
           <br />
