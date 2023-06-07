@@ -32,7 +32,7 @@ const BackToTop = () => {
   return (
     <>
       {isVisible && (
-        <div className="fixed bottom-3 right-3 sm:bottom-4 sm:right-4 md:bottom-6 md:right-6 lg:bottom-8 lg:right-8">
+        <div className="fixed bottom-3 right-3 sm:bottom-4 sm:right-4 md:bottom-6 md:right-6 2xl:bottom-10 2xl:right-10">
           <button
             type="button"
             onClick={scrollToTop}
