@@ -69,7 +69,7 @@ const Interview_scheduler = () => {
           <h3>Main Features</h3>
           <h4>1.	Add schedules</h4>
           <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;Users can add their schedules to an empty spot by inputting their names and selecting the interviewer's avatar.
+          &nbsp;&nbsp;&nbsp;&nbsp;Users can add their schedules to an empty spot by inputting their names and selecting the interviewer&apos;s avatar.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={addSchedule} alt='add schedule' />

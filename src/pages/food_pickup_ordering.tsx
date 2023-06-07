@@ -73,7 +73,7 @@ const Food_pickup_ordering = () => {
           </p>
           <h3>Overview</h3>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Food Pick-up Ordering is an application that facilitates food pick-up ordering services for both customers and merchants sides. Customers can browse the menu, select dishes, and place their orders. Once an order is placed, it is instantly displayed on the restaurant side's dashboard. Additionally, an SMS notification is sent to the restaurant via the Twilio API. Restaurant staff can then review the order, input an estimated preparation time, and start the cooking process. Once the meal is ready, staff members can click the "Finish" button to notify the client that their order is ready for pick-up. SMS messages containing the estimated and actual finish times are sent to customers for their convenience and reference.
+            &nbsp;&nbsp;&nbsp;&nbsp;Food Pick-up Ordering is an application that facilitates food pick-up ordering services for both customers and merchants sides. Customers can browse the menu, select dishes, and place their orders. Once an order is placed, it is instantly displayed on the restaurant side&apos;s dashboard. Additionally, an SMS notification is sent to the restaurant via the Twilio API. Restaurant staff can then review the order, input an estimated preparation time, and start the cooking process. Once the meal is ready, staff members can click the &quot;Finish&quot; button to notify the client that their order is ready for pick-up. SMS messages containing the estimated and actual finish times are sent to customers for their convenience and reference.
           </p>
           <h3>Main Features</h3>
           <h4>1.	Add to cart</h4>
@@ -92,7 +92,7 @@ const Food_pickup_ordering = () => {
           <br />
           <h4>3.	Order history</h4>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Customers can easily access their order histories on the "Order History" page. After an order is placed, a new record will show on the list with the status “Pending”. Besides order status, order ID, start time and end time are also shown to customers.
+            &nbsp;&nbsp;&nbsp;&nbsp;Customers can easily access their order histories on the &quot;Order History&quot; page. After an order is placed, a new record will show on the list with the status “Pending”. Besides order status, order ID, start time and end time are also shown to customers.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={orderHistory} alt='order history' />
@@ -105,7 +105,7 @@ const Food_pickup_ordering = () => {
           <Image className='w-[80%] lg:w-[75%] m-auto' src={ownerDashboardChange} alt='change on the restaurant side' />
           <br />
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Staff at the restaurant side can take the order and input the estimated taken time. After the meal is cooked, the staff can click the "Finish" button to notify the client that their meal is now available for pick-up.
+            &nbsp;&nbsp;&nbsp;&nbsp;Staff at the restaurant side can take the order and input the estimated taken time. After the meal is cooked, the staff can click the &quot;Finish&quot; button to notify the client that their meal is now available for pick-up.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={changeOrderStatus} alt='change order status' />

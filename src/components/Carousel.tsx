@@ -32,7 +32,7 @@ const Carousel = (props: CarouselProps) => {
   useEffect(() => {
     const slideInterval = setInterval(nextSlide, autoSlideInterval)
     return () => clearInterval(slideInterval)
-  }, [])
+  }, [nextSlide])
 
   return (
     <div className='max-w-[1400px] w-[90%] lg:w-[80%] m-auto pt-8 md:pt-12 md:pb-6 lg:pb-8 xl:pt-16 xl:pb-10 px-4 relative group'>

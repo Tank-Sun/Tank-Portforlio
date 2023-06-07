@@ -118,7 +118,7 @@ const Jungle = () => {
           <br />
           <h4>4.	Admin section</h4>
           <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;As mentioned above, there is an admin section in this app, only accessible to the authenticated administrator. Within the admin section, the administrator can perform various actions related to managing the categories and products displayed on the website. This includes the ability to review existing categories and products, add new categories or products to the website's inventory, as well as delete categories or products when necessary. These administrative functions empower the administrator to effectively manage and maintain the content and offerings of the e-commerce website.
+          &nbsp;&nbsp;&nbsp;&nbsp;As mentioned above, there is an admin section in this app, only accessible to the authenticated administrator. Within the admin section, the administrator can perform various actions related to managing the categories and products displayed on the website. This includes the ability to review existing categories and products, add new categories or products to the website&apos;s inventory, as well as delete categories or products when necessary. These administrative functions empower the administrator to effectively manage and maintain the content and offerings of the e-commerce website.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={admin} alt='admin section' />

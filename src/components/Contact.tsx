@@ -111,7 +111,7 @@ const Contact = () => {
         </div>
         <div className='mt-10 md:mt-20'>
           <div className='text-center'>
-            <h2 className={`${caveatBrush.variable} font-touch text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500`}>Let's Get In Touch !</h2>
+            <h2 className={`${caveatBrush.variable} font-touch text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500`}>Let&apos;s Get In Touch !</h2>
           </div>
           <div className='p-4'>
             <form
