@@ -69,10 +69,10 @@ const Shared_document_editor = () => {
           </p>
           <h3>Overview</h3>
           <p className='w-[95%] m-auto'>
-            &nbsp;&nbsp;&nbsp;&nbsp; The shared document editor is an online text editor that can be edited by multiple people simultaneously. Every change is saved automatically and shown to all users. The creator of documents can share documents with other users by sending the links via Gmail API. They can set different permissions such as editable or only viewable for other users when sharing documents.
+            &nbsp;&nbsp;&nbsp;&nbsp;The shared document editor is an online text editor that enables multiple people to collaborate and edit the same document simultaneously. All changes made are automatically saved and visible to all users in real time. The document creator has the ability to share documents with other users by sending them links via the Gmail API. When sharing documents, the creator can assign different permissions to other users, allowing them either to edit the document or simply view its contents.
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;Shared Document Editor 2.0 is an upgraded version of Shared Document Editor. The code and files are refactored and restructured for better readability. TypeScript is used on the server side for easier further upgrade and maintenance.
+            &nbsp;&nbsp;&nbsp;&nbsp;Shared Document Editor 2.0 is an enhanced and upgraded version of the original Shared Document Editor. In this new release, the code and files have undergone significant refactoring and restructuring to improve overall readability and maintainability. Notably, TypeScript has been implemented on the server side, offering several advantages such as easier future upgrades and streamlined maintenance processes. By leveraging TypeScript, developers can work with the codebase more efficiently, benefiting from its strong typing system and improved tooling support. This upgrade ensures a more robust and scalable foundation for the Shared Document Editor, setting the stage for future enhancements and innovations.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={overview} alt='whole flow' />
@@ -87,21 +87,21 @@ const Shared_document_editor = () => {
           <br />
           <h4 className='w-[98%] m-auto'>2. Multiple strategies login</h4>
           <p className='w-[95%] m-auto'>
-          &nbsp;&nbsp;&nbsp;&nbsp;With passport.js, this app can not only be logged in with local usernames and passwords, but also can get in with Google accounts.
+          &nbsp;&nbsp;&nbsp;&nbsp;With the integration of Passport.js, this application offers more than just local username and password login functionality. It also provides the ability to authenticate users using their Google accounts. This feature enhances user convenience by allowing them to securely log in using their existing Google credentials.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={login} alt='Multiple strategies login' />
           <br />
           <h4 className='w-[98%] m-auto'>3. Different ways of searching</h4>
           <p className='w-[95%] m-auto'>
-          &nbsp;&nbsp;&nbsp;&nbsp;Users can search their documents by titles. If they forget titles, documents can also be searched through the contents in them.
+          &nbsp;&nbsp;&nbsp;&nbsp;Users can search their documents by titles. If they forget titles, documents can also be searched through the contents in them. This comprehensive search feature ensures that users can easily locate their desired documents.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={search} alt='Different ways of searching' />
           <br />
           <h4 className='w-[98%] m-auto'>4. Link sharing & permission setting</h4>
           <p className='w-[95%] m-auto'>
-          &nbsp;&nbsp;&nbsp;&nbsp;The links to documents can be shared with other users by sending emails via Gmail API. When the creators share the documents, they can set different permissions such as editable or only viewable to others.
+          &nbsp;&nbsp;&nbsp;&nbsp;The links to documents can be shared with other users by sending emails via Gmail API. When the creators share the documents, they can set different permissions such as editable or view-only to others.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={shareLink} alt='Link sharing & permission setting' />

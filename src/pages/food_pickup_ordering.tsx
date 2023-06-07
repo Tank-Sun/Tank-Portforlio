@@ -73,46 +73,46 @@ const Food_pickup_ordering = () => {
           </p>
           <h3>Overview</h3>
           <p className='w-[95%] m-auto'>
-            &nbsp;&nbsp;&nbsp;&nbsp; Food Pick-up Ordering is an app providing food pick-up ordering service for both client and business sides. Clients can select one or more dishes from the menu and place orders. When an order is placed, it will show on the dashboard of the restaurant side. At the same time, an SMS notification will also be sent to the restaurant side via Twilio API. Staff at the restaurant side can take the order and input the estimated taken time. After cooking the meal, he can click the “Finish” button to tell the client that his meal is ready to pick up. The estimated finish time and the real finish time are also sent to clients as SMS messages.
+            &nbsp;&nbsp;&nbsp;&nbsp;Food Pick-up Ordering is an application that facilitates food pick-up ordering services for both customers and merchants sides. Customers can browse the menu, select dishes, and place their orders. Once an order is placed, it is instantly displayed on the restaurant side's dashboard. Additionally, an SMS notification is sent to the restaurant via the Twilio API. Restaurant staff can then review the order, input an estimated preparation time, and start the cooking process. Once the meal is ready, staff members can click the "Finish" button to notify the client that their order is ready for pick-up. SMS messages containing the estimated and actual finish times are sent to customers for their convenience and reference.
           </p>
           <h3>Main Features</h3>
           <h4 className='w-[98%] m-auto'>1.	Add to cart</h4>
           <p className='w-[95%] m-auto'>
-            &nbsp;&nbsp;&nbsp;&nbsp;Clients can choose different dishes in different quantities and add them to their carts.
+            &nbsp;&nbsp;&nbsp;&nbsp;Customers can select various dishes in different quantities and add them to their carts.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={addToCart} alt='add to cart' />
           <br />
           <h4 className='w-[98%] m-auto'>2.	Edit the cart</h4>
           <p className='w-[95%] m-auto'>
-            &nbsp;&nbsp;&nbsp;&nbsp;Clients can edit the quantities they chose, or delete the dishes they don't want.
+            &nbsp;&nbsp;&nbsp;&nbsp;Customers can edit the quantities of the dishes they have chosen or remove unwanted items from their orders.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={editMyCart} alt='edit my cart' />
           <br />
           <h4 className='w-[98%] m-auto'>3.	Order history</h4>
           <p className='w-[95%] m-auto'>
-            &nbsp;&nbsp;&nbsp;&nbsp;Clients can view their order histories on the Order History page. After an order is placed, a new record will show on the list with the status “Pending”. Besides order status, order ID, start time and end time are also shown for the clients.
+            &nbsp;&nbsp;&nbsp;&nbsp;Customers can easily access their order histories on the "Order History" page. After an order is placed, a new record will show on the list with the status “Pending”. Besides order status, order ID, start time and end time are also shown to customers.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={orderHistory} alt='order history' />
           <br />
           <h4 className='w-[98%] m-auto'>4.	Business side</h4>
           <p className='w-[95%] m-auto'>
-            &nbsp;&nbsp;&nbsp;&nbsp;This app has both client and business sides. When an order is placed, it will also show on the dashboard of the restaurant side.
+            &nbsp;&nbsp;&nbsp;&nbsp;This app has both customers and merchants sides. When a customer places an order, it is automatically displayed on the dashboard of the restaurant side.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={ownerDashboardChange} alt='change on the restaurant side' />
           <br />
           <p className='w-[95%] m-auto'>
-            &nbsp;&nbsp;&nbsp;&nbsp;Staff at the restaurant side can take the order and input the estimated taken time. After cooking the meal, he can click the “Finish” button to tell the client that his meal is ready to pick up.
+            &nbsp;&nbsp;&nbsp;&nbsp;Staff at the restaurant side can take the order and input the estimated taken time. After the meal is cooked, the staff can click the "Finish" button to notify the client that their meal is now available for pick-up.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={changeOrderStatus} alt='change order status' />
           <br />
           <h4 className='w-[98%] m-auto'>5.	SMS notifications</h4>
           <p className='w-[95%] m-auto'>
-            &nbsp;&nbsp;&nbsp;&nbsp;People cannot always stay in front of the computer and watch for the information on this page. Some notices of important information are needed to be sent in extra ways. In this app, the order information, the estimated finish time and the real finish time are sent to respective sides as SMS messages by using Twilio API.
+            &nbsp;&nbsp;&nbsp;&nbsp;To ensure that important information reaches users even when they are not actively monitoring the app, notifications are sent via additional channels in this app. Using the Twilio API, order details, estimated finish times, and real finish times are sent as SMS messages to the respective sides. This proactive approach allows users to stay informed about their orders and enables seamless communication between the restaurant and the client, ensuring a seamless and efficient pick-up process.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={sendMessage} alt='send SMS notification' />

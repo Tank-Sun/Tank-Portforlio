@@ -92,33 +92,33 @@ const Jungle = () => {
           </p>
           <h3>Overview</h3>
           <p className='w-[95%] m-auto'>
-            &nbsp;&nbsp;&nbsp;&nbsp; Jungle is a mini e-commerce application built with Rails 6.1 for the purpose of learning Rails. Clients can choose the plants they want, put them in their carts and check out with credit cards by Stripe API. On the other hand, the shop owner can log in as the administrator. On the admin pages, the administrator can check, add, and delete the categories and products showing on the website.
+            &nbsp;&nbsp;&nbsp;&nbsp; Jungle is a mini e-commerce application built with Rails 6.1 for the purpose of learning Rails. This application allows customers to browse and select plants of their choice, add them to their carts, and proceed to checkout using credit cards through the integration of the Stripe API. In addition, the shop owner has the ability to log in as the administrator. The admin pages provide the necessary functionality for the administrator to manage the categories and products displayed on the website. These administrative capabilities empower the shop owner to maintain and update the inventory of the online store easily.
           </p>
           <h3>Main Features</h3>
           <h4 className='w-[98%] m-auto'>1.	User authentication</h4>
           <p className='w-[95%] m-auto'>
-          &nbsp;&nbsp;&nbsp;&nbsp;As a common functionality in many apps, password-based user authentication is used in this app. For information security, passwords are hashed by using Bcrypt. For now, as a practice project, access to any pages is allowed to everyone. In the future, different permissions between visitors and users can be set easily.
+          &nbsp;&nbsp;&nbsp;&nbsp;Password-based user authentication is implemented to ensure secure access to user accounts. To enhance information security, passwords are securely hashed using the Bcrypt algorithm. For now, as a practice project, all pages are accessible to everyone. However, as the project progresses, it will be easy to configure different permissions and access levels for visitors and authenticated users. 
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={userAuth} alt='user authentication' />
           <br />
           <h4 className='w-[98%] m-auto'>2.	Inventory management</h4>
           <p className='w-[95%] m-auto'>
-          &nbsp;&nbsp;&nbsp;&nbsp;Inventory information is shown on the details page of each product. When a product is sold out, a label will appear and the color of the “Add” button will turn lighter. Meanwhile, the administrator can check and change the inventory information easily in the admin section.
+          &nbsp;&nbsp;&nbsp;&nbsp;Inventory information is shown on the details page of each product. When a product is sold out, a label will appear and the “Add” button will become disabled. Furthermore, in the admin section of this application, the administrator can easily review and update the inventory information. By providing a seamless way to manage inventory, this app ensures accurate and up-to-date information is displayed to both customers and merchants.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={inventory} alt='inventory information' />
           <br />
           <h4 className='w-[98%] m-auto'>3.	Shopping cart</h4>
           <p className='w-[95%] m-auto'>
-          &nbsp;&nbsp;&nbsp;&nbsp;Users can add products to their carts and modify the quantities they want on the “My Cart” page. After that, they can check out with their credit cards through Stripe API.
+          &nbsp;&nbsp;&nbsp;&nbsp;Customers can add products to their carts and modify the quantities of the items on the “My Cart” page. Once customers have finalized their cart contents, they can proceed to the checkout process. The application integrates with the Stripe API, allowing users to securely complete their purchase with credit cards.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={checkout} alt='my cart' />
           <br />
           <h4 className='w-[98%] m-auto'>4.	Admin section</h4>
           <p className='w-[95%] m-auto'>
-          &nbsp;&nbsp;&nbsp;&nbsp;As mentioned above, there is an admin section in this app. Only the administrator is allowed to access after passing the authentication. At there, the administrator can check, add, and delete the categories and products showing on the website.
+          &nbsp;&nbsp;&nbsp;&nbsp;As mentioned above, there is an admin section in this app, only accessible to the authenticated administrator. Within the admin section, the administrator can perform various actions related to managing the categories and products displayed on the website. This includes the ability to review existing categories and products, add new categories or products to the website's inventory, as well as delete categories or products when necessary. These administrative functions empower the administrator to effectively manage and maintain the content and offerings of the e-commerce website.
           </p>
           <br />
           <Image className='w-[80%] lg:w-[75%] m-auto' src={admin} alt='admin section' />
