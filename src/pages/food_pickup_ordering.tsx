@@ -8,6 +8,7 @@ import myCartImage from '../../public/assets/projects/FoodPickUpOrder/myCartImag
 import orderHistoryImage from '../../public/assets/projects/FoodPickUpOrder/orderHistoryImage.png'
 import ownerDashboardImage from '../../public/assets/projects/FoodPickUpOrder/ownerDashboardImage.png'
 import changeOrderStatusImage from '../../public/assets/projects/FoodPickUpOrder/changeOrderStatusImage.png'
+import overview from '../../public/assets/projects/FoodPickUpOrder/wholeFlow.gif'
 import addToCart from '../../public/assets/projects/FoodPickUpOrder/addToCart.gif'
 import editMyCart from '../../public/assets/projects/FoodPickUpOrder/editMyCart.gif'
 import orderHistory from '../../public/assets/projects/FoodPickUpOrder/orderHistory.gif'
@@ -75,6 +76,9 @@ const Food_pickup_ordering = () => {
           <p className='w-[95%] m-auto'>
             &nbsp;&nbsp;&nbsp;&nbsp; Food Pick-up Ordering is an app providing food pick-up ordering service for both client and business sides. Clients can select one or more dishes from the menu and place orders. When an order is placed, it will show on the dashboard of the restaurant side. At the same time, an SMS notification will also be sent to the restaurant side via Twilio API. Staff at the restaurant side can take the order and input the estimated taken time. After cooking the meal, he can click the “Finish” button to tell the client that his meal is ready to pick up. The estimated finish time and the real finish time are also sent to clients as SMS messages.
           </p>
+          <br />
+          <Image className='w-[80%] lg:w-[75%] m-auto' src={overview} alt='whole flow' />
+          <br />
           <h3>Main Features</h3>
           <h4 className='w-[98%] m-auto'>1.	Add to cart</h4>
           <p className='w-[95%] m-auto'>

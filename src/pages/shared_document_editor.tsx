@@ -7,6 +7,7 @@ import loginImage from '../../public/assets/projects/SharedDocumentEditor/login.
 import editorImage from '../../public/assets/projects/SharedDocumentEditor/editor.png'
 import titleSearchImage from '../../public/assets/projects/SharedDocumentEditor/titleSearch.png'
 import contentSearchImage from '../../public/assets/projects/SharedDocumentEditor/contentSearch.png'
+import overview from '../../public/assets/projects/SharedDocumentEditor/wholeFlow.gif'
 import simulEdit from '../../public/assets/projects/SharedDocumentEditor/realtimeEdit.gif'
 import login from '../../public/assets/projects/SharedDocumentEditor/multipleLogin.gif'
 import search from '../../public/assets/projects/SharedDocumentEditor/search.gif'
@@ -73,6 +74,9 @@ const Shared_document_editor = () => {
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;Shared Document Editor 2.0 is an upgraded version of Shared Document Editor. The code and files are refactored and restructured for better readability. TypeScript is used on the server side for easier further upgrade and maintenance.
           </p>
+          <br />
+          <Image className='w-[80%] lg:w-[75%] m-auto' src={overview} alt='whole flow' />
+          <br />
           <h3>Main Features</h3>
           <h4 className='w-[98%] m-auto'>1. Real-time simultaneous editing</h4>
           <p className='w-[95%] m-auto'>

@@ -6,6 +6,7 @@ import dashboardImage from '../../public/assets/projects/InterviewScheduler/dash
 import addScheduleImage from '../../public/assets/projects/InterviewScheduler/addScheduleImage.png'
 import savingImage from '../../public/assets/projects/InterviewScheduler/saving.png'
 import deleteConfirmationImage from '../../public/assets/projects/InterviewScheduler/deleteConfirmation.png'
+import overview from '../../public/assets/projects/InterviewScheduler/wholeFlow.gif'
 import addSchedule from '../../public/assets/projects/InterviewScheduler/addSchedule.gif'
 import deleteSchedule from '../../public/assets/projects/InterviewScheduler/deleteSchedule.gif'
 import modifySchedule from '../../public/assets/projects/InterviewScheduler/modifySchedule.gif'
@@ -62,6 +63,9 @@ const Interview_scheduler = () => {
           <p className='w-[95%] m-auto'>
             &nbsp;&nbsp;&nbsp;&nbsp; Interview Scheduler is a client-side, single-page app made by React that users can easily check, create, modify, and delete their interview schedules.
           </p>
+          <br />
+          <Image className='w-[80%] lg:w-[75%] m-auto' src={overview} alt='whole flow' />
+          <br />
           <h3>Main Features</h3>
           <h4 className='w-[98%] m-auto'>1.	Add schedules</h4>
           <p className='w-[95%] m-auto'>
