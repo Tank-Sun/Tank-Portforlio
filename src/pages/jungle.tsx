@@ -12,7 +12,6 @@ import checkoutImage from '../../public/assets/projects/Jungle/payWithStripeImag
 import adminDashboard from '../../public/assets/projects/Jungle/adminDashboard.png'
 import adminProducts from '../../public/assets/projects/Jungle/adminProducts.png'
 import addNewProduct from '../../public/assets/projects/Jungle/addNewProduct.png'
-import overview from '../../public/assets/projects/Jungle/mainPage.png'
 import userAuth from '../../public/assets/projects/Jungle/userAuth.gif'
 import inventory from '../../public/assets/projects/Jungle/soldOut.gif'
 import checkout from '../../public/assets/projects/Jungle/checkout.gif'
@@ -95,9 +94,6 @@ const Jungle = () => {
           <p className='w-[95%] m-auto'>
             &nbsp;&nbsp;&nbsp;&nbsp; Jungle is a mini e-commerce application built with Rails 6.1 for the purpose of learning Rails. Clients can choose the plants they want, put them in their carts and check out with credit cards by Stripe API. On the other hand, the shop owner can log in as the administrator. On the admin pages, the administrator can check, add, and delete the categories and products showing on the website.
           </p>
-          <br />
-          <Image className='w-[80%] lg:w-[75%] m-auto' src={overview} alt='whole flow' />
-          <br />
           <h3>Main Features</h3>
           <h4 className='w-[98%] m-auto'>1.	User authentication</h4>
           <p className='w-[95%] m-auto'>
