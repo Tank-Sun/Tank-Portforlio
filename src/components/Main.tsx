@@ -1,6 +1,5 @@
 import React from 'react'
 import Typed from 'typed.js'
-import styles from '../styles/Main.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FiChevronsDown } from 'react-icons/fi'
