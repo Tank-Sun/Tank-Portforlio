@@ -12,7 +12,7 @@ import checkoutImage from '../../public/assets/projects/Jungle/payWithStripeImag
 import adminDashboard from '../../public/assets/projects/Jungle/adminDashboard.png'
 import adminProducts from '../../public/assets/projects/Jungle/adminProducts.png'
 import addNewProduct from '../../public/assets/projects/Jungle/addNewProduct.png'
-import overview from '../../public/assets/projects/Jungle/wholeFlow.gif'
+import overview from '../../public/assets/projects/Jungle/mainPage.png'
 import userAuth from '../../public/assets/projects/Jungle/userAuth.gif'
 import inventory from '../../public/assets/projects/Jungle/soldOut.gif'
 import checkout from '../../public/assets/projects/Jungle/checkout.gif'
