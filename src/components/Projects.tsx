@@ -2,12 +2,20 @@ import React from 'react'
 import ProjectItem from './ProjectItem'
 import sharedDocumentEditor from '../../public/assets/projects/SharedDocumentEditor/dashboard.png'
 import InterviewScheduler from '../../public/assets/projects/InterviewScheduler/dashboard.png'
-import FoodPickUpOrder from '../../public/assets/projects/FoodPickUpOrder/mainMenuImage.png'
+// import FoodPickUpOrder from '../../public/assets/projects/FoodPickUpOrder/mainMenuImage.png'
 import Jungle from '../../public/assets/projects/Jungle/mainPage.png'
+import TimeZoneChecker from '../../public/assets/projects/TimeZoneChecker/main.png'
 
 const Projects = () => {
 
   const projects = [
+    {
+      projectName: 'Time Zone Checker',
+      mainTech: 'Node.js, Vue3, Vite, Google Maps API',
+      coverImage: TimeZoneChecker,
+      githubUrl: 'https://github.com/Tank-Sun/TimeZoneChecker',
+      url: '/time_zone_checker'
+    },
     {
       projectName: 'Shared Document Editor 2.0',
       mainTech: 'TypeScript, Node.js, MongoDB, React',
@@ -29,13 +37,13 @@ const Projects = () => {
       githubUrl: 'https://github.com/Tank-Sun/scheduler',
       url: '/interview_scheduler'   
     },
-    {
-      projectName: 'Food Pick-up Ordering',
-      mainTech: 'JavaScirpt, Node.js, PostgreSQL, jQuery, Ajax, Sass',
-      coverImage: FoodPickUpOrder,
-      githubUrl: 'https://github.com/Tank-Sun/midterm-1-Food-Pick-up-Ordering',
-      url: '/food_pickup_ordering'
-    }
+    // {
+    //   projectName: 'Food Pick-up Ordering',
+    //   mainTech: 'JavaScirpt, Node.js, PostgreSQL, jQuery, Ajax, Sass',
+    //   coverImage: FoodPickUpOrder,
+    //   githubUrl: 'https://github.com/Tank-Sun/midterm-1-Food-Pick-up-Ordering',
+    //   url: '/food_pickup_ordering'
+    // }
   ];
 
   const projectsList = projects.map((project, index) => {

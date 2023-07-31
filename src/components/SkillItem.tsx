@@ -1,9 +1,9 @@
 import React from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 type SkillItemProps = {
   skillName: string,
-  skillImage: string,
+  skillImage: string | StaticImageData,
   width: number
 }
 

@@ -3,6 +3,9 @@ import Link from 'next/link'
 import SkillItem from './SkillItem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import vue from '../../public/assets/skills/vue.png'
+import vite from '../../public/assets/skills/vite.png'
+import googlemaps from '../../public/assets/skills/googlemaps.png'
 
 const About = () => {
 
@@ -71,7 +74,22 @@ const About = () => {
       skillName: 'Ruby on Rails',
       skillImage: '/assets/skills/rubyonrails.png',
       width: 60
-    }
+    },
+    {
+      skillName: 'Vue.js',
+      skillImage: vue,
+      width: 40
+    },
+    {
+      skillName: 'Vite',
+      skillImage: vite,
+      width: 40
+    },
+    {
+      skillName: 'Google Maps API',
+      skillImage: googlemaps,
+      width: 40
+    },
   ];
 
   const skillList = skills.map((skill, index) => {
