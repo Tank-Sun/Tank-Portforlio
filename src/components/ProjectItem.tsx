@@ -9,6 +9,7 @@ type ProjectItemProps = {
   mainTech: string,
   coverImage: StaticImageData,
   githubUrl: string,
+  demoUrl: string,
   url: string
 };
 
@@ -21,13 +22,20 @@ const ProjectItem = (props: ProjectItemProps) => {
           <h5 className='md:text-2xl text-white tracking-wider text-center'>{props.projectName}</h5>
         </div>
         <div>
-          <p className='text-xs md:text-lg pb-4 pt-2 text-white text-center'>{props.mainTech}</p>
+          <p className='text-xs md:text-lg pb-0.5 md:pb-4 pt-0.5 md:pt-2 text-white text-center'>{props.mainTech}</p>
         </div>
         <div>
           <Link href={props.githubUrl} target="_blank" rel="noopener noreferrer">
             <p className='text-center my-1 md:my-2 py-1 px-4 rounded-lg bg-white text-gray-700 font-bold text-xs md:text-lg cursor-pointer hover:bg-blue-500 hover:text-white'>Code on GitHub <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm'/></p>
           </Link>
         </div>
+        {props.demoUrl &&
+          <div>
+            <Link href={props.demoUrl} target="_blank" rel="noopener noreferrer">
+              <p className='text-center my-1 md:my-2 py-1 px-4 rounded-lg bg-white text-gray-700 font-bold text-xs md:text-lg cursor-pointer hover:bg-blue-500 hover:text-white'>Live Demo <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm'/></p>
+            </Link>
+          </div>
+        }
         <div>
           <Link href={props.url}>
             <p className='text-center my-1 md:my-2 py-1 px-4 rounded-lg bg-white text-gray-700 font-bold text-xs md:text-lg cursor-pointer hover:bg-blue-500 hover:text-white'>More Info <FontAwesomeIcon icon={faArrowRight} size='sm'/></p>

@@ -14,6 +14,7 @@ const Projects = () => {
       mainTech: 'Node.js, Vue3, Vite, Google Maps API',
       coverImage: TimeZoneChecker,
       githubUrl: 'https://github.com/Tank-Sun/TimeZoneChecker',
+      demoUrl: 'https://timezonechecker.up.railway.app/',
       url: '/time_zone_checker'
     },
     {
@@ -21,6 +22,7 @@ const Projects = () => {
       mainTech: 'TypeScript, Node.js, MongoDB, React',
       coverImage: sharedDocumentEditor,
       githubUrl: 'https://github.com/Tank-Sun/Shared_document_editor_2.0',
+      demoUrl: '',
       url: '/shared_document_editor'
     },
     {
@@ -28,6 +30,7 @@ const Projects = () => {
       mainTech: 'Ruby, Ruby on Rails, PostgreSQL, Stripe',
       coverImage: Jungle,
       githubUrl: 'https://github.com/Tank-Sun/jungle',
+      demoUrl: '',
       url: '/jungle'
     },
     {
@@ -35,6 +38,7 @@ const Projects = () => {
       mainTech: 'JavaScirpt, React, Cypress',
       coverImage: InterviewScheduler,
       githubUrl: 'https://github.com/Tank-Sun/scheduler',
+      demoUrl: '',
       url: '/interview_scheduler'   
     },
     // {
@@ -54,6 +58,7 @@ const Projects = () => {
         mainTech={project.mainTech}
         coverImage={project.coverImage}
         githubUrl={project.githubUrl}
+        demoUrl={project.demoUrl}
         url={project.url}
       />
     );
