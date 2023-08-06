@@ -43,10 +43,17 @@ const Time_zone_checker = () => {
         <div className='py-4'>
           <h1 className='lg:text-6xl'>Time Zone Checker</h1>
         </div>
-        <div className='lg:pb-4 pt-2'>
-          <Link href='https://github.com/Tank-Sun/TimeZoneChecker' target="_blank" rel="noopener noreferrer">
-            <button className='text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm lg:text-lg px-4 py-1.5 text-center mr-2 mb-2'>Github <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm'/></button>
-          </Link>
+        <div className='lg:pb-4 pt-2 flex'>
+          <div>
+            <Link href='https://github.com/Tank-Sun/TimeZoneChecker' target="_blank" rel="noopener noreferrer">
+              <button className='text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm lg:text-lg px-4 py-1.5 text-center mr-4'>Github <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm'/></button>
+            </Link>
+          </div>
+          <div>
+            <Link href='https://timezonechecker.up.railway.app/' target="_blank" rel="noopener noreferrer">
+              <button className='text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm lg:text-lg px-4 py-1.5 text-center'>Live Demo <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm'/></button>
+            </Link>
+          </div>
         </div>
         <div className='pb-16'>
           <h3>Tech Stack</h3>
